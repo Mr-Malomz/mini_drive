@@ -15,7 +15,6 @@ export const FileList = ({ url }) => {
     axios
       .get('https://res.cloudinary.com/dtgbzmpca/raw/list/files.json')
       .then((res) => {
-        console.log(res.data.resources);
         setList(res.data.resources);
         setLoading(false);
         setError(false);

@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css';
 import { useState } from 'react';
 import { withPageAuthRequired } from '@auth0/nextjs-auth0';
 
-export default function Files({ user }) {
+export default function Home({ user }) {
   const [tab, setTab] = useState(1);
   const [filetype, setFiletype] = useState('');
   const [url, setURL] = useState(null);

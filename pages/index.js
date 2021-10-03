@@ -12,7 +12,7 @@ export default function Home({ user }) {
   const [url, setURL] = useState(null);
 
   const handleChange = (e) => {
-    setFiletype({ filetype: e.target.value });
+    setFiletype(e.target.value);
   };
 
   const openWidget = () => {
@@ -21,7 +21,7 @@ export default function Home({ user }) {
         {
           cloudName: 'dtgbzmpca',
           uploadPreset: 'tca2j0ee',
-          tags: [filetype.filetype],
+          tags: [filetype],
         },
         (error, result) => {
           if (!error && result && result.event === 'success') {

@@ -2,7 +2,6 @@ import styles from '../styles/Home.module.css';
 import { CloudinaryContext } from 'cloudinary-react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { login } from '@auth0/nextjs-auth0';
 
 export const FileList = ({ url }) => {
   const [loading, setLoading] = useState(false);

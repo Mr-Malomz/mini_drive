@@ -91,8 +91,8 @@ export default function Home({ user }) {
 
         <div>
           {tab == 1 && <ImageList url={url} />}
-          {tab == 2 && <VideoList />}
-          {tab == 3 && <FileList />}
+          {tab == 2 && <VideoList url={url} />}
+          {tab == 3 && <FileList url={url} />}
         </div>
       </main>
     </div>
